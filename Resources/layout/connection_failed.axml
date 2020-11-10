@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/versionInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/connectionFailedLayout">
+    <TextView
+        android:id="@+id/connectionFail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONNECTION FAILED"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_marginTop="125sp"
+        android:textSize="25sp"/>
+    <Button
+        android:id="@+id/retryButton"
+        android:layout_width="175sp"
+        android:layout_height="wrap_content"
+        android:text="RETRY CONNECTION"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="175sp"
+        android:background="@drawable/retry_button"/>
+    <Button
+        android:id="@+id/authorizeButton"
+        android:layout_width="175sp"
+        android:layout_height="wrap_content"
+        android:text="RE-AUTHORIZE CONNECTION"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250sp"
+        android:background="@drawable/create_button"/>
+    </RelativeLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+</RelativeLayout>
+

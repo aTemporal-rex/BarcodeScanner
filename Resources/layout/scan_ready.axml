@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/scanStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="READY FOR SCAN"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="30sp"
+    />
+
+    <ProgressBar
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/loadingScanView"
+        android:layout_centerInParent="true"
+        android:indeterminateOnly="true"
+        android:keepScreenOn="true"
+        android:visibility="gone"
+     />
+    <EditText
+        android:id="@+id/debugEdit"
+        android:layout_width="1sp"
+        android:layout_height="0sp"
+        android:text="" 
+    />
+    <TextView
+        android:id="@+id/debugText"
+        android:layout_width="0sp"
+        android:layout_height="0sp"
+        android:visibility="gone" />
+
+</RelativeLayout>
